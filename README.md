@@ -1,18 +1,18 @@
 # Fullstack User Management - Frontend (Vue.js)
 
-Frontend untuk aplikasi **User Management** fullstack menggunakan **Vue.js 3 + TypeScript**.  
-Aplikasi ini berfungsi untuk **autentikasi pengguna**, **registrasi**, serta **CRUD user management** melalui integrasi API backend (Go).
+Frontend for **User Management** fullstack application built with **Vue.js 3 + TypeScript**.  
+This app provides **user authentication**, **registration**, and **CRUD user management** integrated with a Go backend API.
 
 ---
 
 ## 🚀 Features
-- Login & Register dengan JWT Authentication
-- Protected routes (hanya user yang login bisa akses)
+- Login & Register with JWT Authentication
+- Protected routes (accessible only for authenticated users)
 - CRUD user (Create, Read, Update, Delete)
-- **TanStack Query (Vue Query)** untuk data fetching & caching
-- **CORS** enabled (akses API dari backend Go)
-- Routing terstruktur dengan Vue Router
-- Responsive UI dengan Tailwind CSS
+- **TanStack Query (Vue Query)** for data fetching & caching
+- **CORS** enabled (access API from Go backend)
+- Structured routing with Vue Router
+- Responsive UI with Tailwind CSS
 
 ---
 
@@ -22,7 +22,7 @@ Aplikasi ini berfungsi untuk **autentikasi pengguna**, **registrasi**, serta **C
 - **State/Data**: TanStack Query (Vue Query)
 - **Styling**: Tailwind CSS
 - **Build Tool**: Vite
-- **Auth**: JWT (dari backend Go)
+- **Auth**: JWT (from Go backend)
 
 ---
 
@@ -84,7 +84,7 @@ fe-fullstack-vue-go/
 ---
 
 ## ⚙️ Environment Variables
-Buat file `.env` atau `.env.local` di root project:
+Create a `.env` or `.env.local` file in the project root:
 
 ```env
 VITE_API_URL=http://localhost:3000
@@ -97,28 +97,28 @@ VITE_API_URL=http://localhost:3000
 # Install dependencies
 npm install
 
-# Jalankan development server
+# Run development server
 npm run dev
 ```
 
-Frontend akan berjalan di:  
+Frontend will be available at:  
 👉 `http://localhost:5173`
 
 ---
 
 ## 🔗 API Integration
-Semua request data menggunakan **TanStack Query**, dengan base URL diambil dari `VITE_API_URL`.  
-Pastikan backend Go sudah berjalan di port yang sesuai (default `3000`).
+All data requests use TanStack Query, with the base URL defined by VITE_API_URL.
+Make sure the Go backend is running on the matching port (default: 3000).
 
 ---
 
 ## 📌 Pages
-- `/login` → Halaman login
-- `/register` → Halaman registrasi
+- `/login` → Login page
+- `/register` → Registration page
 - `/` → Home
-- `/admin/dashboard` → Dashboard admin
-- `/admin/users` → List user
-- `/admin/users/create` → Tambah user
+- `/admin/dashboard` → Admin dashboard
+- `/admin/users` → User list
+- `/admin/users/create` → Create new user
 - `/admin/users/:id/edit` → Edit user
 
 ---
